@@ -56,8 +56,10 @@
   .places {
     margin-left: 24px;
     margin-right: 24px;
+    width: calc(100% - 48px);
   }
   .places__title {
+    width: calc(100% - 48px);
     font-size: 45px;
     line-height: 49px;
     max-width: 720px;

@@ -1,0 +1,168 @@
+.places-section {
+  color: white;
+}
+
+.places-section__place {
+  max-width: 984px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 352px auto;
+  grid-template-areas:
+    "title artist"
+    "image paragraphs"
+    "button paragraphs";
+  grid-gap: 40px;
+  margin-bottom: 80px;
+}
+
+.places-section__title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  grid-area: title;
+  font-family: "Inter";
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+}
+
+.places-section__image {
+  width: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+
+.places-section__subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: gray;
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 14.52px;
+  font-weight: 400;
+}
+
+.places-section__autor {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.places-section__paragraph {
+  margin-top: 0;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 29.34px;
+  font-weight: 400;
+}
+
+.places-section__button {
+  margin-top: 120px;
+  max-width: 289px;
+  width: 100%;
+  height: 48px;
+  color: white;
+  grid-area: button;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 21.78px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px 0px #00000040;
+}
+
+.places-section__place:last-child .places-section__button {
+  margin-top: 0;
+}
+
+.places-section__artist {
+  grid-area: artist;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.places-section__paragraphs {
+  grid-area: paragraphs;
+}
+
+@media screen and (max-width: 768px) {
+  .places-section__place {
+    max-width: 720px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: calc(100% - 48px);
+    grid-template-rows: auto 340px auto;
+    overflow: hidden;
+  }
+
+  .places-section__button {
+    margin-top: 0;
+  }
+
+  .places-section__place:last-child .places-section__button {
+    margin-top: -95px;
+  }
+
+  .places-section__image {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .places-section__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .places-section__paragraph {
+    font-size: 16px;
+    line-height: 26.08px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places-section__place {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraphs"
+      "button";
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    grid-gap: 0;
+  }
+  .places-section__title {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .places-section__artist {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 30px;
+  }
+  .places-section__image {
+    margin-bottom: 30px;
+  }
+  .places-section__paragraph {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 25px;
+  }
+  .places-section__button {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .places-section__place:last-child .places-section__button {
+    margin-top: 0;
+  }
+}

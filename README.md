@@ -10,7 +10,7 @@ Contenidos del Proyecto
 
 HTML: Estructura principal del sitio, organizada en secciones como el logo, lead (título y subtítulo), intro (contenido principal) y footer.
 
-CSS Estilos y media queries para asegurar que el sitio sea responsivo y se adapte a diferentes dispositivos.
+CSS Estilos y media queries para asegurar que el sitio sea responsivo y se adapte a diferentes dispositivos, tambien vemos el uso de grid como herramienta para el desarrollo de las nuevas secciones, logrando un acabado visual mucho mas fluido.
 
 Figma: El diseño original fue creado en Figma y proporciona la referencia visual para el desarrollo.
 
