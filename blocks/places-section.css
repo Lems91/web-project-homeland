@@ -69,7 +69,7 @@
   font-size: 18px;
   line-height: 21.78px;
   font-weight: 600;
-  background: linear-gradient(90deg, #0278fe 0%, #003a7b 100%);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px 0px #000000;
   border-radius: 4px;
 }
