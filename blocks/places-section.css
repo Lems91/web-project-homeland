@@ -74,6 +74,10 @@
   border-radius: 4px;
 }
 
+.places-section__button:hover {
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+}
+
 .places-section__place:last-child .places-section__button {
   margin-top: 0;
 }
